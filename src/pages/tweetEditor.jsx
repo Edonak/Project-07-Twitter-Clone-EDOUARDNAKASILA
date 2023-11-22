@@ -1,6 +1,10 @@
 import React from "react";
 import Image from "./../images/profile-photo.png";
+import ImagesTweet from "./../images/Metameta.png"
 
+function TextTweet ({placeholder}){
+  return <p className="tweet-editor-input" >{placeholder}</p>
+}
 function TweetEdit() {
     return(
         <div className="tweet-editor">
@@ -8,13 +12,10 @@ function TweetEdit() {
           <img src={Image} alt="image" srcset="" />
         </div>
         <div className="tweet-editor-form">
-          <p className="tweet-editor-input">What’s happening?</p>
+          <TextTweet placeholder="What’s happening?"/>
           <div className="tweet-editor-buttons">
             <div className="tweet-editor-actions">
-              <p>Icon1</p>
-              <p>Icon1</p>
-              <p>Icon1</p>
-              <p>Icon1</p>
+            <img src={ImagesTweet} alt="" srcset="" />
             </div>
             <button type="button" className="button">
               Tweet
