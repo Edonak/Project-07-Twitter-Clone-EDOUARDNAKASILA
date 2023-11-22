@@ -5,7 +5,6 @@ import LogoTweet from "./../images/Tweet Photo.png";
 import LogoAvatar from "./../images/Tweet-Profile-Photo (1).png";
 import ImagesTweet from "./../images/Frame 8.png";
 
-
 function LogoTweeter() {
   return <img src={LogoTweet} alt="" srcset="" />;
 }
@@ -17,7 +16,9 @@ function Tweet() {
   return (
     <div className="tweets">
       <div className="tweet">
-        <img src={Image} alt="img" srcset="" />
+        <div className="tweet-avatar">
+          <img src={Image} alt="img" srcset="" />
+        </div>
         <div className="tweet-content">
           <p className="tweet-text">
             CNN @CNN . 7m President Joe Biden touted a new agreement reached
@@ -46,7 +47,7 @@ function Tweet() {
               cultivation and the land
             </p>
             <div className="tweet-image">
-              <img src="../images/tweet-image.png" alt="image" srcset="" />
+              <img src={ImageAvatar} alt="image" srcset="" />
             </div>
           </div>
           <div className="tweet-actions">
@@ -56,12 +57,10 @@ function Tweet() {
       </div>
       <div className="tweet">
         <LogoTweeter />
-        
+
         <div className="tweet-content">
-        <p className="tweet-title-detail">Twitter @Twitter . Oct 29 </p>
-          <p className="tweet-text">
-          BIG NEWS lol jk still Twitter.
-          </p>
+          <p className="tweet-title-detail">Twitter @Twitter . Oct 29 </p>
+          <p className="tweet-text">BIG NEWS lol jk still Twitter.</p>
           <div className="tweet-action">
             <div className="tweet-actions">
               <TweetAction />
@@ -72,10 +71,8 @@ function Tweet() {
       <div className="tweet">
         <LogoTweeter />
         <div className="tweet-content">
-        <p className="tweet-title-detail">Twitter @Twitter . Oct 29 </p>
-          <p className="tweet-text">
-          hello literally everyone
-          </p>
+          <p className="tweet-title-detail">Twitter @Twitter . Oct 29 </p>
+          <p className="tweet-text">hello literally everyone</p>
           <div className="tweet-action">
             <div className="tweet-actions">
               <TweetAction />
@@ -86,10 +83,8 @@ function Tweet() {
       <div className="tweet">
         <LogoTweeter />
         <div className="tweet-content">
-        <p className="tweet-title-detail">Twitter @Twitter . Oct 29 </p>
-          <p className="tweet-text">
-          hello literally everyone
-          </p>
+          <p className="tweet-title-detail">Twitter @Twitter . Oct 29 </p>
+          <p className="tweet-text">hello literally everyone</p>
           <div className="tweet-action">
             <div className="tweet-actions">
               <TweetAction />
