@@ -10,8 +10,20 @@ function LogoTweeter() {
 }
 
 function TweetAction() {
-  return <img src={ImagesTweet} alt="" srcset="" />;
+  return (
+    <div className="tweet-action">
+      <div className="tweet-actions">
+        <img src={ImagesTweet} alt="" srcset="" />
+      </div>
+    </div>
+  );
 }
+
+function TweetDetail({ value }) {
+  return <span className="tweet-title-details">{value}</span>;
+}
+
+
 function Tweet() {
   return (
     <div className="tweets">
@@ -19,18 +31,20 @@ function Tweet() {
         <div className="tweet-avatar">
           <img src={Image} alt="img" srcset="" />
         </div>
-        <div className="tweet-content">
-          <p className="tweet-text">
-            CNN @CNN . 7m President Joe Biden touted a new agreement reached
-            with the European Union to ease Trump-era tariffs on aluminum and
-            steel as a "major breakthrough" that would serve to both strengthen
-            the US steel industry and combat the global climate crisis.
+        <div className="">
+          <p className="tweet-title">
+            {" "}
+            CNN
+            <TweetDetail value="@CNN . 7m" />
           </p>
-          <div className="tweet-action">
-            <div className="tweet-actions">
-              <TweetAction />
-            </div>
-          </div>
+          <p className="tweet-text">
+            President Joe Biden touted a new agreement reached with the European
+            Union to ease Trump-era tariffs on aluminum and steel as a "major
+            breakthrough" that would serve to both strengthen the US steel
+            industry and combat the global climate crisis.
+          </p>
+
+          <TweetAction />
         </div>
       </div>
 
@@ -40,7 +54,9 @@ function Tweet() {
         </div>
         <div className="tweet-content">
           <div className="tweet-body">
-            <p className="tweet-title">The New York Times @nytimes .2h</p>
+            <p className="tweet-title">
+              The New York Times <TweetDetail value="@nytimes .2h" />
+            </p>
             <p className="tweet-text">
               Gardening boomed during the pandemic. Six Black writers share how
               it has helped them re-establish, and reimagine, a connection to
@@ -50,16 +66,16 @@ function Tweet() {
               <img src={ImageAvatar} alt="image" srcset="" />
             </div>
           </div>
-          <div className="tweet-actions">
-            <TweetAction />
-          </div>
+          <TweetAction />
         </div>
       </div>
       <div className="tweet">
         <LogoTweeter />
 
         <div className="tweet-content">
-          <p className="tweet-title-detail">Twitter @Twitter . Oct 29 </p>
+          <p className="tweet-title-detail">
+            Twitter <TweetDetail value="@Twitter . Oct 29" />{" "}
+          </p>
           <p className="tweet-text">BIG NEWS lol jk still Twitter.</p>
           <div className="tweet-action">
             <div className="tweet-actions">
@@ -71,25 +87,21 @@ function Tweet() {
       <div className="tweet">
         <LogoTweeter />
         <div className="tweet-content">
-          <p className="tweet-title-detail">Twitter @Twitter . Oct 29 </p>
+          <p className="tweet-title-detail">
+            Twitter <TweetDetail value="@Twitter . Oct 4" />{" "}
+          </p>
           <p className="tweet-text">hello literally everyone</p>
-          <div className="tweet-action">
-            <div className="tweet-actions">
-              <TweetAction />
-            </div>
-          </div>
+          <TweetAction />
         </div>
       </div>
       <div className="tweet">
         <LogoTweeter />
         <div className="tweet-content">
-          <p className="tweet-title-detail">Twitter @Twitter . Oct 29 </p>
+          <p className="tweet-title-detail">
+            Twitter <TweetDetail value="@Twitter . Oct 4" />{" "}
+          </p>
           <p className="tweet-text">hello literally everyone</p>
-          <div className="tweet-action">
-            <div className="tweet-actions">
-              <TweetAction />
-            </div>
-          </div>
+          <TweetAction />
         </div>
       </div>
     </div>
