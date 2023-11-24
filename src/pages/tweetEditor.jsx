@@ -1,6 +1,11 @@
 import React from "react";
 import Image from "./../images/profile-photo.png";
-import ImagesTweet from "./../images/Metameta.png"
+import ImagesText from "./../images/Poll.png";
+import ImageGif from "./../images/Gif.png"; 
+import ImageMedia from "./../images/Media.png"; 
+import ImageEmoji from "./../images/Emoji.png"; 
+import ImageSchedule from "./../images/Schedule.png";
+
 
 function TextTweet (){
   return (
@@ -19,7 +24,11 @@ function TweetEdit() {
           <TextTweet />
           <div className="tweet-editor-buttons">
             <div className="tweet-editor-actions">
-            <img src={ImagesTweet} alt="" srcset="" />
+            <img src={ImageMedia} alt="" srcset="" />
+            <img src={ImageGif} alt="" srcset="" />
+            <img src={ImagesText} alt="" srcset="" />
+            <img src={ImageEmoji} alt="" srcset="" />
+            <img src={ImageSchedule} alt="" srcset="" />
             </div>
             <button type="button" className="button">
               Tweet
