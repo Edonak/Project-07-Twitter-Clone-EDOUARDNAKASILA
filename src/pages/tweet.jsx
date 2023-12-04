@@ -1,10 +1,12 @@
-import React from "react";
+import React, { Component } from "react";
 import Image from "./../images/tweet-profile-photo.png";
 import ImageAvatar from "./../images/tweet-image.png";
 import LogoTweet from "./../images/Tweet Photo.png";
 import LogoAvatar from "./../images/Tweet-Profile-Photo (1).png";
 import ImageVerified from "./../images/Verified.png";
 import ImagesTweet from "./../images/Frame 8.png";
+import ImageTweetAction from "./../images/Frame big new.png";
+import data from "../components/data.json";
 
 function Verfied() {
   <img src={ImageVerified} alt="" srcset="" />
@@ -54,7 +56,13 @@ function Tweet() {
         </div>
         <div className="tweet-content">
           <div className="tweet-body">
-            <p className="tweet-title">The New York Times <Verfied /> <TweetDetail value="@nytimes . 2h" /></p>
+            <p className="tweet-title">The New York Times <Verfied />
+            {data?.pictures?.map((item, index)=>(
+              <div key={index}>
+                 <img src={item.src} alt="img validate"/>
+              </div>
+               ))}
+             <TweetDetail value="@nytimes . 2h" /></p>
             <p className="tweet-text">
               Gardening boomed during the pandemic. Six Black writers share how
               it has helped them re-establish, and reimagine, a connection to
@@ -77,7 +85,7 @@ function Tweet() {
           <p className="tweet-text">BIG NEWS lol jk still Twitter.</p>
           <div className="tweet-action">
             <div className="tweet-actions">
-              <TweetAction />
+            <img src={ImageTweetAction} alt="img" srcset="" />
             </div>
           </div>
         </div>
