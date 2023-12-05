@@ -13,7 +13,7 @@ function Verfied() {
 }
 
 function LogoTweeter() {
-  return <img src={LogoTweet} alt="" srcset="" />;
+  return <img src={LogoTweet} alt="logo tweeter" srcset="" />;
 }
 
 function TweetAction() {
