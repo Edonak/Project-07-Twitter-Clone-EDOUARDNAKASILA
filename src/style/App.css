@@ -186,23 +186,6 @@ body {
   color: #2f3336;
 }
 
-.tweet-actions svg{
-  filter : hue-rotate(208deg) saturate(6%) brightness(46%);
-}
-
-.tweet-actio:hover{
-  filter: invert(61%) sepia(42%) saturate(5478%) hue-rotate(185deg) brightness(99%) contrast(98%);
-  cursor:pointer;
-}
-.tweet-actio:hover{
-  filter: invert(28%) sepia(93%) saturate(4177%) hue-rotate(339deg) brightness(116%) contrast(96%);
-  cursor: pointer ;
-}
-.retweet-action:hover{
-  filter: invert(97%) sepia(52%) saturate(2839%) hue-rotate(63deg) brightness(110%) contrast(96%);
-  cursor: pointer;
-}
-
 .tweet-action {
   display: flex;
   align-items: center;
@@ -241,7 +224,7 @@ body {
   }
   
   .sidebar-right {
-    right: -20px;
+    right: -5.9rem;
     
     
   }
@@ -275,7 +258,7 @@ body {
 }
 
 .sidebar-right input[type="text"] {
-  width: 330px;
+  width: 75%;
   padding: 10px;
   border: 1px solid;
   border-radius: 20px;
@@ -305,8 +288,7 @@ body {
 }
 .trends, .who-to-follow {
     display: flex;
-    width: 330px;
-   
+    width: 75%;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
