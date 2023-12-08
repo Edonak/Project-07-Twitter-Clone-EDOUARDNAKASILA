@@ -43,7 +43,7 @@ export default function Sidebar() {
           </li>
           <li>
             <Image src={LogoImage} className="spaceLogoLinkName" />
-            <NavLink to="">Image</NavLink>
+            <NavLink to="">Profile</NavLink>
           </li>
           <li>
             <Image src={LogoMore} className="spaceLogoLinkName" />
@@ -52,7 +52,7 @@ export default function Sidebar() {
         </ul>
         <Button name="Tweet" className="button_sidebar" />
         <div className="Profil">
-          im
+          <img src="" alt="photo profil"/>
         </div>
       </div>
     </>
