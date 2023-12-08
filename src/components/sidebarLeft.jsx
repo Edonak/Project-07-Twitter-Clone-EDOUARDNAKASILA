@@ -14,7 +14,7 @@ import LogoMessages from "./../images/Messages.svg";
 export default function Sidebar() {
   return (
     <>
-      <div className="sidebar">
+      <div className="sidebar-left">
         <ul>
           <Image src={LogoX} className="logoX" />
           <li>
@@ -51,6 +51,9 @@ export default function Sidebar() {
           </li>
         </ul>
         <Button name="Tweet" className="button_sidebar" />
+        <div className="Profil">
+          im
+        </div>
       </div>
     </>
   );

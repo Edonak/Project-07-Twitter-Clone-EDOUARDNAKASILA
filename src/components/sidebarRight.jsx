@@ -1,21 +1,10 @@
 import logoSetting from "./../images/Options.svg";
 import Image from "./image";
+
+
 export default function SidebarRight() {
-  const usersToFollow = [
-    {
-      name: "edouardNak",
-      username: "edonak@gmail.com",
-    },
-    {
-      name: "rubin",
-      username: "rubin@gmail.com",
-    },
-    {
-      name: "christian",
-      username: "chrismus@gmail.com",
-    },
-  ];
-  const trends = ["#Tendance1", "#Tendance2", "#Tendance3", "#Tendance4"];
+ 
+  const trends = ["#SQUID", "#SQUID", "#SQUID", "#SQUID"];
 
   return (
     <div className="sidebar-right">
@@ -46,19 +35,7 @@ export default function SidebarRight() {
         </ul>
         <a href="">Show more</a>
       </div>
-      <div className="who-to-follow">
-        <h3>Who to follow</h3>
-        <ul>
-          {usersToFollow.map((user) => (
-            <li key={user.username}>
-              <span>{user.name}</span>
-              <span>{user.username}</span>
-              <button>Follow</button>
-            </li>
-          ))}
-        </ul>
-        <a href="">Show more</a>
-      </div>
+     
     </div>
   );
 }
