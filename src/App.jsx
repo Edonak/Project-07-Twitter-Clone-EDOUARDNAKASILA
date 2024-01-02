@@ -11,7 +11,7 @@ export default function App() {
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/profil" element={<Profile />} />
+          <Route path="/:user" element={<Profile />} />
         </Routes>
       </Layout>
     </Router>
