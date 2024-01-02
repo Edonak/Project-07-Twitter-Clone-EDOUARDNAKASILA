@@ -1,50 +1,43 @@
-import React from "react"
-import Image from "./image"
-import TweetActions from "./tweetActions"
-import Verified from "./../images/Verified.svg"
-import tweetsData from "../tweet-data"
+import React from 'react';
+import TweetActions from './tweetActions';
 
-export default function Tweets() {
+
+
+export default function Tweets({id,  avatar, author, certificate, username, date, content, image, like, comment, retweet}) {
   return (
-    <>
-      <div className="tweets">
-        {tweetsData.map((tweet, index) => {
-          return (
-            <div className="tweet" key={index}>
-              <Image
-                className="tweet-avatar"
-                src={tweet.profileUser}
-                alt="profile-image"
-              />
-              <div className="tweet-content">
-                <div className="tweet-body">
-                  <span className="tweet-title">
-                    <span className="tweet-title-author">{tweet.name}</span>
-                    <span>
-                    <Image src={Verified} />
-                    </span>
-                    <span className="tweet-title-details">{tweet.author}</span>
-                    <span className="tweet-title-details">{" . "}</span>
-                    <span className="tweet-title-details">
-                      {tweet.dateOrTime}
-                    </span>
-                  </span>
-
-                  <p className="tweet-text">{tweet.content}</p>
-                  <div className="tweet-image">
-                    {tweet.Img && <Image src={tweet.Img} />}
-                  </div>
-                </div>
-                <TweetActions
-                  userComment={tweet.comments}
-                  userRetweet={tweet.retweets}
-                  userLove={tweet.likes}
-                />
-              </div>
+    <div className='tweet'key={id}>
+    <div className="tweet-avatar">
+        <img src={avatar} alt="" />
+    </div>
+    <div className="tweet-content">
+        <div className="tweet-body">
+            <div className="tweet-title">
+                <span className='tweet-title-author'>{author}</span>
+                <img src={certificate} alt="image certificate" className="tweet-certificate" />
+                <span className="tweet-title-details">@{username}</span>
+                <span className="tweet-title-details">.</span>
+                <span className="tweet-title-details">{date}</span>
             </div>
-          )
-        })}
-      </div>
-    </>
+            <div className="tweet-text">{content}</div>
+            { image ?
+                <div className="tweet-image">
+                    <img src={image} alt="" />
+                </div> :
+                null 
+            }
+        </div>
+        <TweetActions
+         like={like}
+         comment={comment}
+         retweet={retweet}
+         />
+    </div>
+</div>
   )
 }
+
+
+
+
+
+

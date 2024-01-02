@@ -1,31 +1,27 @@
-import Reply from "./../images/Reply.svg"
-import Retweet from "./../images/Retweet.svg"
-import React from "./../images/React.svg"
-import Share from "./../images/Share.svg"
-import Image from "./image"
+import React from 'react';
+import CommentIcon from './../images/commentIcon.svg';
+import RetweetIcon from './../images/retweetIcon .svg';
+import LikeIcon from './../images/like.svg';
+import ShareIcon from './../images/shareIcon.svg';
 
-export default function Tweetactions({ userComment, userRetweet, userLove }) {
+export default function TweetActions({comment, retweet, like}) {
   return (
-    <>
-      <div className="tweet-actions">
-        <div className="tweet-action">
-          <Image src={Reply} />
-          {userComment}
-        </div>
-
-        <div className="tweet-action">
-          <Image src={Retweet} />
-          {userRetweet}
-        </div>
-
-        <div className="tweet-action">
-          <Image src={React} />
-          {userLove}
-        </div>
-        <div className="tweet-action">
-          <Image src={Share} />
-        </div>
-      </div>
-    </>
+    <div className="tweet-actions">
+    <span className="tweet-action" title="Comments">
+        <img src={CommentIcon} alt="" />
+        {comment}
+    </span>
+    <span className="tweet-action" title="Retweets">
+        <img src={RetweetIcon} alt="" />
+        {retweet}
+    </span>
+    <span className="tweet-action" title="Likes">
+        <img src={LikeIcon} alt="" />
+        {like}
+    </span>
+    <span className="tweet-action" title="Share">
+        <img src={ShareIcon} alt="" />
+    </span>
+</div>
   )
 }

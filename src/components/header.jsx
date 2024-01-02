@@ -1,12 +1,11 @@
-import Image from "./image"
-import Img from "./../images/topTweet.png"
+import React from 'react';
+import TopTweetIcon from './../images/tweetTopIcon.svg';
 
 export default function Header() {
   return (
-    <header className="header">
-      <h1 className="page-title">Home</h1>
-
-      <Image className="top-tweets" src={Img} />
-    </header>
-  );
+    <div className='header'>
+        <h2 className='page-title'> Home </h2>
+        <img src={TopTweetIcon} alt="Top twitter" className="top-tweets" />
+    </div>
+  )
 }
