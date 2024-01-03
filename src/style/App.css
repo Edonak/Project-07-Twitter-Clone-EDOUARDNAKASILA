@@ -85,7 +85,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  /*padding: 0.8rem 0;*/
   gap: 1rem;
 }
 .tweet-editor-actions button {
@@ -193,7 +192,7 @@ body {
 
 /*NavBar style*/
 .sidebar {
-  margin: 5px 55px;
+  margin: 0.32rem 3.4rem;
   font-family: "Inter", sans-serif;
   display: flex;
   flex-direction: column;
@@ -204,10 +203,10 @@ body {
   list-style: None;
   display: flex;
   flex-direction: column;
-  gap: 7px;
+  gap: 0.43rem;
 }
 .navigation-list button {
-  margin-top: 25px;
+  margin-top: 1.5rem;
   text-align: center;
 }
 .button:hover {
@@ -216,9 +215,9 @@ body {
 }
 .navigation {
   display: flex;
-  gap: 10px;
-  border-radius: 50px;
-  padding: 4px 10px;
+  gap: 0.6rem;
+  border-radius: 3rem;
+  padding: 0.25rem 0.6rem;
 }
 .navigation:hover {
   background-color: #2023277c;
@@ -226,18 +225,18 @@ body {
 }
 .user {
   display: flex;
-  margin-top: 120px;
+  margin-top: 7.5rem;
   justify-content: space-evenly;
   align-items: center;
-  padding: 7px 10px;
+  padding:0.4rem 0.6rem;
 }
 .user:hover {
   background-color: #2023277c;
   cursor: pointer;
-  border-radius: 50px;
+  border-radius: 3rem;
 }
 .profile-user {
-  flex: 0 0 40px;
+  flex: 0 0 2.8rem;
 }
 
 .user-id-author {
@@ -255,13 +254,13 @@ body {
   color: #6e767d;
 }
 .user-more-info {
-  margin-left: 50px;
+  margin-left: 3rem;
 }
 
 /*Trends style*/
 
 .trend {
-  margin: 5px 55px;
+  margin: 0.32rem 3.4rem;
   font-family: "Inter", sans-serif;
   display: flex;
   flex-direction: column;
