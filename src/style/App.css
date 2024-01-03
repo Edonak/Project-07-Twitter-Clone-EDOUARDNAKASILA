@@ -26,7 +26,6 @@ body {
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #2f3336;
- 
 }
 
 .top-tweets {
@@ -192,171 +191,80 @@ body {
   width: 75px;
 }
 
-/*SideBar style*/
-
-.sidebar-left, .sidebar-right {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  overflow-y: auto;
- 
-}
-
-/*SideBar Left Style*/
-
-.sidebar-left {
-  width: 25%;
-  left: 60px;
-    
-  }
-.sidebar-left ul {
-  list-style: none;
-  padding: 0;
-  
-}
-
-.sidebar-left ul li {
+/*NavBar style*/
+.sidebar {
+  margin: 5px 55px;
+  font-family: "Inter", sans-serif;
   display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-  width: 27%;
-  border-radius: 1rem;
+  flex-direction: column;
+  height: 100%;
+  max-width: 250px;
 }
-
-.sidebar-left ul li:hover {
-  background: #a8a8a825;
- }
-.spaceLogoLinkName {
-  margin-right: 10px;
+.navigation-list {
+  list-style: None;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
 }
-.logoX {
-  margin-bottom: 20px;
-  padding-top: 1.5em;
+.navigation-list button {
+  margin-top: 25px;
+  text-align: center;
 }
-
-.active {
-  text-decoration: none;
-  color: white;
+.button:hover {
+  background-color: #109bf867;
+  cursor: pointer;
 }
-.button_sidebar {
-  text-transform: capitalize;
-  width: 50%;
-  height: 8vh;
-  padding: 16px 0px;
-  border: none;
+.navigation {
+  display: flex;
+  gap: 10px;
   border-radius: 50px;
-  background-color: #1d9bf0;
-  color: white;
-  font-size: 1rem;
+  padding: 4px 10px;
+}
+.navigation:hover {
+  background-color: #2023277c;
   cursor: pointer;
 }
-
-/* side bar right */
-
-.sidebar-right {
-  width: 30%;
-  padding-top: 1.5em;
-  right: -4.9rem;
+.user {
+  display: flex;
+  margin-top: 120px;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 7px 10px;
 }
-
-.sidebar-right input[type="text"] {
-  width: 75%;
-  padding: 10px;
-  border: 1px solid;
-  border-radius: 20px;
-  font-size: 1rem;
-  margin-bottom: 20px;
-  background-color: #202327;
-}
-
-.sidebar-right input[type="text"]::placeholder {
-  color: #999;
-}
-
-.sidebar-right input[type="text"]:focus {
-  outline: none;
-  border-color: #1da1f2;
-}
-
-.sidebar-right h3 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-}
-
-.sidebar-right ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.trends, .trendsfollow {
-    display: flex;
-    width: 75%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    flex-shrink: 0;
-    background-color: #202327;
-    border-radius: 15px;
-    padding: 10px 10px;
-}
-
-.sidebar-right ul li {
-  margin-bottom: 10px;
-}
-
-.sidebar-right a {
-  color: #1da1f2;
-  text-decoration: none;
-}
-.who-to-follow{
-    margin-top: 15px;
-
-}
-.sidebar-right .who-to-follow button {
-  background-color: #1da1f2;
-  color: white;
-  padding: 5px 10px;
-  border: none;
-  border-radius: 20px;
-  font-weight: bold;
+.user:hover {
+  background-color: #2023277c;
   cursor: pointer;
+  border-radius: 50px;
+}
+.profile-user {
+  flex: 0 0 40px;
 }
 
-
-.search-icon {
-  background-image: url("./../images/Search-Icon.svg");
-  background-position: left;
-  background-repeat: no-repeat;
-  text-indent: 35px; 
+.user-id-author {
+  display: flex;
+  gap: 0.5rem;
 }
-.Trends-for-you{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding-bottom: 1px;
-    gap: 6px;
-
-    
+.user-id h3, p{
+  font-size: small;
 }
-.setting{
-    display: flex;
-    height: 20px;
-    padding: 0px 18px 0px 14px;
-    
-   
-    
+.user-id-author img{
+  width: 15%;
+  height: 15%;
 }
-.Trending{
-    
-
-    display: flex;
-    justify-content: space-between;
-    width: 320px;
-    padding-bottom: 1px;
-    gap: 6px;
+.user-id-details {
+  color: #6e767d;
 }
-.Trending .more{
-  
-padding: 0px 16px 0px 8px;
+.user-more-info {
+  margin-left: 50px;
+}
 
+/*Trends style*/
+
+.trend {
+  margin: 5px 55px;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 250px;
 }

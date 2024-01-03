@@ -5,7 +5,9 @@ import TweetEditorForm from './tweetEditorForm';
 export default function TweetEditor() {
   return (
     <div className='tweet-editor'>
-        <img src={ProfilAvatar} alt="profil image" className='avatar' />
+      <div className='avatar'>
+      <img src={ProfilAvatar} alt="profil image" />
+      </div>
         <TweetEditorForm />
     </div>
   )
