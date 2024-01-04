@@ -11,7 +11,7 @@ export default function NavbarProfil() {
       </div>
       <div className="user-id">
         <div className="user-id-author">
-          <h3>Edouardo Nak</h3>
+          <h3>Edouardo</h3>
           <img src={PrivateIcon} alt="" />
         </div>
         <p className="user-id-details">@ednak</p>

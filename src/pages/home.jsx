@@ -4,6 +4,7 @@ import Header from '../components/header';
 import TweetEditor from '../components/tweetEditor';
 import Tweet from '../components/tweet';
 import Navbar from '../components/navbar';
+import Trends from '../components/trends';
 
 function Home() {
   return (
@@ -18,7 +19,7 @@ function Home() {
     <Tweet />
     </main>
     <div className="trend">
-    
+    <Trends />
     </div>
     </>
   );
