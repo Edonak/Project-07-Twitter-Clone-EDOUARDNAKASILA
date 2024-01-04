@@ -18,7 +18,7 @@ function Home() {
     <TweetEditor />
     <Tweet />
     </main>
-    <div className="trend">
+    <div className="trends">
     <Trends />
     </div>
     </>
