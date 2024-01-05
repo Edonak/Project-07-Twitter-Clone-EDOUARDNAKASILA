@@ -17,10 +17,11 @@ export default function Navbar() {
             <img src={LogoTweeter} alt="" />
         </div>
         <ul className="navigation-list">
-            <li className="navigation">
+           <Link to='/'> <li className="navigation">
                 <img src={Home} alt="" />
                         Home
             </li>
+            </Link>
             <li className="navigation">
                 <img src={Explore} alt="" />
                 <span>Explore</span>
@@ -41,11 +42,12 @@ export default function Navbar() {
                 <img src={Lists} alt="" />
                 <span>Lists</span>
             </li>
-            
+            <Link to='/profil'>
                 <li className="navigation">
                     <img src={Profile} alt="" />
                     <span>Profile</span>
                 </li>
+            </Link>
             <li className="navigation">
                 <img src={More} alt="" />
                 <span>Plus</span>
