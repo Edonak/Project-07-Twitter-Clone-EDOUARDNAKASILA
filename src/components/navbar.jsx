@@ -54,7 +54,9 @@ export default function Navbar() {
             </li>
             <button className="button">Tweet</button>
         </ul>
+        <Link to='/profil'>
         <NavbarProfil />
+        </Link>
         </>
      );
 }
