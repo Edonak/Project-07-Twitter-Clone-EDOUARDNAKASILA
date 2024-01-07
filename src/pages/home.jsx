@@ -6,7 +6,7 @@ import Tweet from '../components/tweet';
 import Navbar from '../components/navbar';
 import Trends from '../components/trends';
 
-function Home() {
+export default function Home() {
   return (
     <>
 
@@ -24,5 +24,3 @@ function Home() {
     </>
   );
 }
-
-export default Home;

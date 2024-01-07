@@ -200,6 +200,9 @@ body {
   height: 100%;
   width: 25%;
 }
+.sidebar ul {
+  list-style: none;
+}
 .navigation-list {
   list-style: None;
   display: flex;
@@ -329,3 +332,106 @@ body {
 }
 
 
+/*Profil Style*/
+.profile-container{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+  border-bottom: 1px solid #2F3336;
+}
+.profile-banner{
+  height: 6vh;
+}
+.profile-banner img{
+  object-fit: contain;
+  width: 100%;
+}
+
+.profile-photo-actions{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.profile-actions{
+  display: flex;
+  justify-content: space-between;
+  gap:10px;
+}
+.profile-actions .button{
+ background: #d9d9d9;
+ color: #202327;
+
+ text-transform: capitalize;
+  padding: 0.3rem 1rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 0.8rem;
+}
+.profile-actions div:first-child{
+  margin-top: 5px;
+}
+
+.profile-infos{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+  gap: 10px;
+}
+
+.usernames h1{
+  font-weight: bold;
+  font-size : 1rem;
+}
+.usernames p{
+  font-size : 0.7rem;
+}
+
+.profile-bio{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.additional-infos{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 40px;
+  color:#6E767D;
+  
+}
+
+.additional-infos div:first-child{
+  color : #1D9BF0;
+}
+
+.followers{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 40px;
+  color:#6E767D;
+}
+.followers span{
+  color: white;
+}
+
+.profile-nav{
+  margin-top: 30px
+}
+
+.profile-nav ul{
+  list-style : none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.profile-nav li p{
+  text-align: center;
+}
+
+.profile-nav li div{
+  background-color: #1D9BF0;
+  height: 10%;
+}
