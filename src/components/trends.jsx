@@ -29,7 +29,7 @@ export default function Trends() {
           Show more
         </a>
       </div>
-     
+     <Follow />
     </>
   );
 }

@@ -11,7 +11,7 @@ export default function TweetActions({comment, retweet, like}) {
     const [color3, setColor3] = useState("");
   
     const handleClick1 = () => {
-      setColor1("red");
+      setColor1("green");
     };
   
     const handleClick2 = () => {
@@ -19,7 +19,7 @@ export default function TweetActions({comment, retweet, like}) {
     };
   
     const handleClick3 = () => {
-      setColor3("green");
+      setColor3("red");
     };
   
 

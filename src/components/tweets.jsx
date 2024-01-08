@@ -1,8 +1,6 @@
 import React from 'react';
 import TweetActions from './tweetActions';
 
-
-
 export default function Tweets({id,  avatar, author, certificate, username, date, content, image, like, comment, retweet}) {
   return (
     <div className='tweet'key={id}>

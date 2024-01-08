@@ -385,7 +385,8 @@ body {
   font-size : 1rem;
 }
 .usernames p{
-  font-size : 0.7rem;
+  font-size : 0.9rem;
+  color: #6E767D;
 }
 
 .profile-bio{
