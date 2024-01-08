@@ -1,7 +1,6 @@
 import React from 'react';
-import { userFollows } from '../datas/dataFollows';
 
-export default function Follow({id, avatar, usarname, certificate, user}) {
+export default function Follow({id, avatar, username, certificate, user}) {
   return (
     <div className='follow'>
         <h3 className='follow-title'>Who to follow</h3>
@@ -9,13 +8,14 @@ export default function Follow({id, avatar, usarname, certificate, user}) {
             <img src={avatar} alt="avatar image" />
             <div className='follow-user'>
                 <div className="follow-user-t">
-                <h5 className='follow-use'>{usarname}</h5>
+                <h5 className='follow-use'>{username}</h5>
                 <img src={certificate} alt="image certificate" />
                 </div>
                 <p className='follow-usarname'>{user}</p>
             </div>
+            <button className='button'>Follow</button>
         </div>
-        <button className='button'>Follow</button>
+       
     </div>
   )
 }
