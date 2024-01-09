@@ -330,6 +330,20 @@ body {
   color: #1d9bf0;
   text-decoration: none;
 }
+/*follow style*/
+.follow{
+  align-items: center;
+  gap:20px;
+  background-color:#202327;
+  padding: 7px;
+  border-radius: 12px;
+  margin-top: 1rem;
+  margin-left: -2.5rem;
+  margin-right: -2.5rem;
+}
+.follow-container{
+  display: flex;
+}
 
 
 /*Profil Style*/
