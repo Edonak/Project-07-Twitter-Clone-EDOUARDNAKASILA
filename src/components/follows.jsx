@@ -1,5 +1,4 @@
 import React from "react";
-
 export default function Follows({ avatar, author, certificate, username, id }) {
   return (
     <div className="follow" key={id}>
@@ -21,5 +20,4 @@ export default function Follows({ avatar, author, certificate, username, id }) {
         Show more
       </a>
     </div>
-  );
-}
+  )}

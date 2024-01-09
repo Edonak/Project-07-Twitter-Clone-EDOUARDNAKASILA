@@ -3,7 +3,6 @@ import React from 'react';
 import SearchIcon from './../images/searchIcon.svg';
 import SettingLogo from './../images/option.svg';
 import Trending from './trending';
-import Follow from './follows';
 import Follows from './follows';
 
 export default function Trends() {
@@ -31,6 +30,7 @@ export default function Trends() {
         </a>
       </div>
      <Follows />
+   
     </>
   );
 }

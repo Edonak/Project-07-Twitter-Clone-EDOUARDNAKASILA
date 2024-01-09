@@ -22,18 +22,19 @@ export default function Profile() {
       </div>
       <div className="profile-infos">
         <div className="usernames">
-          <h1>CNN</h1>
-          <p>@CNN</p>
+          <h1>Profil</h1>
+          <p>@monprofil</p>
         </div>
         <div className="profile-bio">
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta,
-            dolore!
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+           Molestiae distinctio cumque quasi officia doloribus 
+           enim magnam nulla dolores quam nisi?
           </p>
           <div className="additional-infos">
             <div>
               <img src="" alt="" />
-              <span>cnn.com</span>
+              <span>Profil.com</span>
             </div>
             <div>
               <img src="" alt="" />
