@@ -53,3 +53,68 @@ function App() {
 }
 
 export default App;
+
+
+
+
+
+
+
+
+
+
+import React, {useState, useContext} from 'react';
+import CommentIcon from './../images/commentIcon.svg';
+import RetweetIcon from './../images/retweetIcon .svg';
+import LikeIcon from './../images/like.svg';
+import ShareIcon from './../images/shareIcon.svg';
+
+// Créer un contexte pour stocker le nombre de likes
+const LikeContext = React.createContext(0);
+
+ function TweetActions({comment, retweet, like}) {
+
+    const [color1, setColor1] = useState("");
+    const [color2, setColor2] = useState("");
+    const [color3, setColor3] = useState("");
+  
+    const handleClick1 = () => {
+      setColor1("green");
+    };
+  
+    const handleClick2 = () => {
+      setColor2("blue");
+    };
+  
+    const handleClick3 = () => {
+      setColor3("red");
+    };
+  
+    // Utiliser le contexte pour accéder et modifier le nombre de likes
+    const [likes, setLikes] = useContext(LikeContext);
+
+    // Définir une fonction pour incrémenter le nombre de likes
+    const incrementLikes = () => {
+      setLikes(likes + 1);
+    };
+
+  return (
+    <div className="tweet-actions">
+    <div className="tweet-action" title="Comments" onClick={handleClick1} style={{color: color1 }}>
+        <img src={CommentIcon} alt="" style={{color: color1 }}/>
+        {comment}
+    </div>
+    <div className="tweet-action" title="Retweets"  onClick={handleClick2} style={{ color: color2 }}>
+        <img src={RetweetIcon} alt="" />
+        {retweet}
+    </div>
+    <div className="tweet-action" title="Likes"  onClick={handleClick3} style={{ color: color3 }}>
+        <img src={LikeIcon} alt="" />
+        {likes} // Afficher le nombre de likes du contexte
+    </div>
+    <div className="tweet-action" title="Share">
+        <img src={ShareIcon} alt="" />
+    </div>
+</div>
+  )
+}
