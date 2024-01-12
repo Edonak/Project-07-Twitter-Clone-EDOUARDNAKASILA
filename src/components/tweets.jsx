@@ -15,7 +15,7 @@ export default function Tweets({
   retweet,
 }) {
   return (
-    <div className='tweet' key={id}>
+    <div className='tweet flex' key={id}>
       <div className="tweet-avatar">
         <img src={avatar} alt="" />
       </div>
