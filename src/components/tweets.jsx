@@ -19,7 +19,7 @@ export default function Tweets({
       <div className="tweet-avatar">
         <img src={avatar} alt="" />
       </div>
-      <div className="tweet-content flex">
+      <div className="tweet-content">
         <div className="tweet-body">
           <div className="tweet-title">
             <span className="tweet-title-author">{author}</span>
