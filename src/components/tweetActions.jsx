@@ -3,16 +3,16 @@ import CommentIcon from './../images/commentIcon.svg';
 import RetweetIcon from './../images/retweetIcon .svg';
 import LikeIcon from './../images/like.svg';
 import ShareIcon from './../images/shareIcon.svg';
-import valueLike from '../context';
-valueLike
+import { LikesContext } from '../context';
 
 export default function TweetActions({comment, retweet, like}) {
+
+  
+    const { likes, setLikes } = useContext(LikesContext);
 
     const [color1, setColor1] = useState("");
     const [color2, setColor2] = useState("");
     const [color3, setColor3] = useState("");
-
-    const LikeContext = useContext(valueLike);
   
     const handleClick1 = () => {
       setColor1("green");
@@ -24,7 +24,7 @@ export default function TweetActions({comment, retweet, like}) {
   
     const handleClick3 = () => {
       setColor3("red");
-      LikeContext.incrementLikes();
+      setLikes(likes + 1);
     };
   
 

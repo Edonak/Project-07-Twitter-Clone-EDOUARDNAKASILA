@@ -1,19 +1,13 @@
 import React, { createContext, useState } from 'react';
 
-const valueLike = createContext();
+export const LikesContext = createContext();
 
-export function valueLikeProvider({ children }) {
+export const LikesProvider = ({ children }) => {
   const [likes, setLikes] = useState(0);
 
-  const incrementLikes = () => {
-    setLikes(likes + 1);
-  };
-
   return (
-    <valueLike.Provider value={{ likes, incrementLikes }}>
+    <LikesContext.Provider value={{ likes, setLikes }}>
       {children}
-    </valueLike.Provider>
+    </LikesContext.Provider>
   );
-}
-
-export default valueLike;
+};
