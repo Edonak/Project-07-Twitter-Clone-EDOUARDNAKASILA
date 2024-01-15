@@ -22,5 +22,17 @@ export default function Tweet() {
     );
   });
 
+
+  const Tweet = () => {
+    const { author } = useParams();
+
+    const tweet = datasTweets.find(tweet => tweet.author === author);
+
+    return (
+        <div>
+        </div>
+    );
+};
+
   return <div className="tweets">{tweetData}</div>;
 }

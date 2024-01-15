@@ -1,5 +1,6 @@
 import React from "react";
 import TweetActions from "./tweetActions";
+import { Link } from "react-router-dom";
 
 export default function Tweets({
   id,
@@ -17,7 +18,9 @@ export default function Tweets({
   return (
     <div className='tweet flex' key={id}>
       <div className="tweet-avatar">
-        <img src={avatar} alt="" />
+        <Link to={`/${author}`}>
+          <img src={avatar} alt="" />
+        </Link>
       </div>
       <div className="tweet-content">
         <div className="tweet-body">

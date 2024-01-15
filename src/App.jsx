@@ -12,7 +12,7 @@ export default function App() {
     <Layout>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/profil" element={<Profil />}/>
+        <Route path="/:author" element={<Profil />}/>
       </Routes>
     </Layout>
     </BrowserRouter>
