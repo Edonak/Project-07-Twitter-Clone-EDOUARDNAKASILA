@@ -1,0 +1,74 @@
+{
+    "current-user": {
+        "id": "1",
+        "coverPhoto": "src/images/tweet-image.png",
+        "profilePicture": "src/images/profile-photo.png",
+        "pseudo": "Bradley Ortiz",
+        "userName": "@bradleyOrtiz",
+        "biography": "Programming",
+        "location": "Kinshasa",
+        "websiteLink": "www.mawete.com",
+        "yearJoined": "January 2018",
+        "numberSubscriptions": "15",
+        "numberSubscribers": "8"
+    },
+    "tweets": [
+        {
+            "id": 1,
+            "name": "CNN",
+            "content": "President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a major breakthrough that would serve to both strengthen the US steel industry and combat the global climate crisis.",
+            "comments": 57,
+            "retweets": 144,
+            "likes": 184,
+            "dateOrTime": "7m",
+            "author": "@CNN",
+            "profileUser": "../../src/images/tweet-profile-photo.svg"
+        },
+        {
+            "id": 2,
+            "name": "The New York Times",
+            "content": "Gardening boomed during the pandemic. Six Black writers share how it has helped them re-establish, and reimagine, a connection to cultivation and the land",
+            "Img": "../../src/images/tweet-image1.png",
+            "comments": 19,
+            "retweets": 48,
+            "likes": 482,
+            "dateOrTime": "2h",
+            "author": "@nytimes",
+            "profileUser": "../../src/images/logoNewYorkTime.svg"
+        },
+        {
+            "id": 3,
+            "name": "Twitter",
+            "content": "BIG NEWS lol jk still Twitter",
+            "comments": "6.8K",
+            "retweets": "36.6K",
+            "likes": "267.1K",
+            "dateOrTime": "Oct 20",
+            "author": "@Twitter",
+            "profileUser": "../../src/images/twitterLogoBleu.svg"
+        },
+        {
+            "id": 4,
+            "name": "Twitter",
+            "content": "hello literally everyone",
+            "comments": "118.7K",
+            "retweets": "785.4K",
+            "likes": "3.3M",
+            "dateOrTime": "Oct 4",
+            "author": "@Twitter",
+            "profileUser": "../../src/images/twitterLogoBleu.svg"
+        },
+        {
+            "id": 5,
+            "name": "Twitter",
+            "content": "hello literally everyone",
+            "Img": "../../src/images/tweet-image1.png",
+            "comments": "18.7K",
+            "retweets": "785.4K",
+            "likes": "3.3M",
+            "dateOrTime": "Oct 4",
+            "author": "@twitter",
+            "profileUser": "../../src/images/twitterLogoBleu.svg"
+        }
+    ]
+}
