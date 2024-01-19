@@ -203,6 +203,11 @@ body {
 .sidebar ul {
   list-style: none;
 }
+.sidebar ul li{
+  list-style: none;
+  text-decoration: none;
+}
+
 .navigation-list {
   list-style: None;
   display: flex;
@@ -222,6 +227,11 @@ body {
   gap: 0.6rem;
   border-radius: 3rem;
   padding: 0.25rem 0.6rem;
+  
+}
+.navigation-link{
+  text-decoration: none;
+  color: #d9d9d9;
 }
 .navigation:hover {
   background-color: #2023277c;
@@ -340,10 +350,27 @@ body {
   margin-top: 1rem;
   margin-left: -2.5rem;
   margin-right: -2.5rem;
+  height: 50vh;
 }
 .follow-container{
   display: flex;
+  margin-top: 2rem;
+  gap: 1rem;
 }
+.follow-container .button{
+  background:white;
+  width: 23%;
+  height: 2rem;
+  padding-bottom: 1.5rem;
+  color: black;
+  font-size: 0.8rem;
+  
+}
+.author-container {
+  display: flex;
+  gap: 0.5rem;
+}
+
 
 /*Profil Style*/
 .profile-container{

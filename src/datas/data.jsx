@@ -4,12 +4,6 @@ import ProfilNewYork from './../images/logoNewYorkTime.svg';
 import TwitterLogo from './../images/twitterLogoBleu.svg';
 import ImageVerified from './../images/Verified.svg';
 
-
-import NewYorkLogo from './../images/logoNewYorkTime.svg';
-import CertificateLogo from './../images/Verified.svg';
-import CnnLogo from './../images/CnnLogo.svg';
-import TwitterLogos from './../images/twitterLogoBleu.svg';
-
 export const datasTweets = [
     {
         id : 1 ,
@@ -77,30 +71,3 @@ export const datasTweets = [
         retweetsNumber: 845,
     }
 ]
-
-export const userFollows = [
-    {
-        id : 1,
-        avatar : NewYorkLogo,
-        author : "The New York Times",
-        certificate : CertificateLogo,
-        username : '@nytimes',
-      },
-    {
-        id : 2,
-        avatar : CnnLogo,
-        author : "CNN",
-        certificate : CertificateLogo,
-        username : '@cnn',
-      },
-    {
-        id : 3,
-        avatar : TwitterLogos,
-        author : "Twitter",
-        certificate : CertificateLogo,
-        username : '@twitter',
-      }
-]
-
-
-

@@ -27,10 +27,10 @@ export default function TweetActions({ comment, retweet, like }) {
         className="tweet-action"
         title="Comments" 
         onMouseEnter={handleHover1}
-        onMouseLeave={() => setColor1('')}
+        onMouseLeave={() => {setColor1('')}}
         style={{ color: color1 }}
       >
-        <img src={CommentIcon} alt="" style={{ color: color1 }}  />
+        <img src={CommentIcon} alt="" style={{ filter: `brightness(${color1 ? '150%' : '100%'})` }}  />
         {comment}
       </div>
       <div
